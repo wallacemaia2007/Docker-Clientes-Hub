@@ -1,10 +1,18 @@
 # Docker Clientes Hub
 
-Aplicação demonstrativa de cadastro de clientes, criada para apoiar o **Minicurso de Docker & Compose na prática da TechnoMonte, na Universidade Federal de Uberlândia (UFU)**.
+Aplicação demonstrativa de cadastro de clientes, criada pela **Maiawall** para apoiar o **Minicurso de Docker & Compose na prática da TechnoMonte, na Universidade Federal de Uberlândia (UFU)**. A interface segue a identidade visual do [Maiawall Cursos](https://github.com/wallacemaia2007/Maiawall-Courses), com a marca, paleta vermelha e hero escuro; acompanhe também o [LinkedIn do instrutor](https://www.linkedin.com/in/wallacemaia-dev/).
 
 A proposta é aprender Docker construindo e executando uma aplicação pequena, mas completa: um frontend, uma API e um banco de dados, cada um em seu próprio serviço/contêiner. Ao longo da prática, o projeto permite observar Dockerfiles, build de imagens, rede entre serviços, publicação de portas, volume persistente, healthchecks, logs e ciclo de vida via Docker Compose.
 
 > Projeto didático para uso local em aula. As credenciais e configurações incluídas são apenas para demonstração e não devem ser reutilizadas em produção.
+
+## Marca e autoria
+
+A logo oficial do Maiawall Cursos está em `frontend/public/assets/brand/logo-light.png` e é servida pelo frontend. A interface combina a paleta vermelha e branca da Maiawall (`#a6273f`, `#861d32`, branco) com o hero escuro inspirado nas superfícies `#202226` e `#181a1d` do site de cursos.
+
+- **Instrutor:** [LinkedIn de Wallace Maia](https://www.linkedin.com/in/wallacemaia-dev/)
+- **Marca:** [maiawall.com](https://maiawall.com)
+- **Plataforma de cursos:** [Maiawall Cursos no GitHub](https://github.com/wallacemaia2007/Maiawall-Courses)
 
 ## O que a aplicação faz
 

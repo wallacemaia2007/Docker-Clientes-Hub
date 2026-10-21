@@ -5,6 +5,7 @@ COPY package*.json ./
 RUN npm install
 COPY index.html vite.config.js ./
 COPY src ./src
+COPY public ./public
 RUN npm run build
 
 # Etapa final: imagem pequena do Nginx serve o front e faz proxy para a API.

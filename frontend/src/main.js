@@ -3,15 +3,15 @@ import './style.css';
 const app = document.querySelector('#app');
 app.innerHTML = `
   <main class="shell">
-    <header class="topbar"><a class="brand" href="#"><span class="brand-mark">D</span> docker<span class="brand-light">lab</span></a><span class="live"><i></i> aplicação online</span></header>
-    <section class="hero"><p class="eyebrow">DEMO PRÁTICA · DOCKER COMPOSE</p><h1>Gestão de <span>clientes.</span></h1><p class="subtitle">Uma aplicação simples, três serviços e tudo conectado por uma rede Docker.</p>
+    <header class="topbar"><a class="brand" href="https://port.maiawall.com" target="_blank" rel="noopener noreferrer" aria-label="Maiawall — abrir site"><span class="brand-mark"><img src="/assets/brand/logo-light.png" alt="" /></span><span class="brand-wordmark"><span class="brand-name">Maiawall</span><span class="brand-product">Docker Lab</span></span></a><span class="live"><i></i> aplicação online</span></header>
+    <section class="hero"><p class="eyebrow">TECHNOMONTE · UFU &nbsp; / &nbsp; MINICURSO DOCKER & COMPOSE</p><h1>Gestão de <span>clientes.</span></h1><p class="subtitle">Uma demo prática da Maiawall para explorar contêineres, imagens e serviços conectados com Docker Compose.</p>
       <div class="architecture"><div class="arch-item"><span class="arch-icon browser-icon">▣</span><div><b>Frontend</b><small>Vite + Nginx</small></div></div><span class="connector">⟷</span><div class="arch-item"><span class="arch-icon api-icon">⌘</span><div><b>Backend</b><small>Node + Express</small></div></div><span class="connector">⟷</span><div class="arch-item"><span class="arch-icon db-icon">▤</span><div><b>Database</b><small>PostgreSQL</small></div></div></div>
     </section>
     <section class="panel"><div class="panel-heading"><div><p class="eyebrow">CADASTRO</p><h2>Seus clientes</h2></div><span id="count" class="count">0 clientes</span></div>
       <form id="client-form"><input id="client-id" type="hidden"><label>Nome<input id="nome" name="nome" placeholder="Ex.: Ana Souza" maxlength="120" required></label><label>E-mail<input id="email" name="email" type="email" placeholder="ana@exemplo.com" maxlength="254" required></label><div class="form-actions"><button id="cancel" class="button secondary hidden" type="button">Cancelar edição</button><button id="submit" class="button primary" type="submit"><span>＋</span> Cadastrar cliente</button></div></form>
       <div id="notice" class="notice hidden"></div><div class="table-wrap"><table><thead><tr><th>CLIENTE</th><th>E-MAIL</th><th>CADASTRADO EM</th><th></th></tr></thead><tbody id="rows"></tbody></table><div id="empty" class="empty"><span class="empty-icon">⌁</span><b>Nenhum cliente por enquanto</b><p>Cadastre o primeiro cliente acima para testar a API e o banco.</p></div></div>
     </section>
-    <footer><span>Uma demo didática de CRUD</span><span>Front <b>→</b> API <b>→</b> PostgreSQL</span></footer>
+    <footer class="footer"><span class="footer-credit">© Maiawall · Minicurso Docker & Compose na prática <span class="footer-sep">·</span> TechnoMonte / UFU</span><nav class="footer-links" aria-label="Links do projeto"><a href="https://www.linkedin.com/in/wallacemaia-dev/" target="_blank" rel="noopener noreferrer">Linkedin ↗</a><a href="https://port.maiawall.com" target="_blank" rel="noopener noreferrer">maiawall.com ↗</a><a href="https://github.com/wallacemaia2007/Docker-Clientes-Hub" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav></footer>
   </main>`;
 
 const form = document.querySelector('#client-form');
